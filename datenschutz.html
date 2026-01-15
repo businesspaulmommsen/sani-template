@@ -1,0 +1,265 @@
+<!-- ===========================
+datenschutz.html (Header vereinheitlicht + Cookie im BODY + Karriere ergänzt + Call Button)
+=========================== -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Datenschutz | Sanitärbetrieb</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="datenschutz.html" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <!-- Cookie Banner (muss im BODY sein) -->
+  <div class="cookie" data-cookie-banner hidden>
+    <div class="cookie-backdrop" data-cookie-close></div>
+
+    <section class="cookie-card" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+      <div class="cookie-head">
+        <div>
+          <div class="cookie-kicker">Datenschutz</div>
+          <h2 id="cookieTitle" class="cookie-title">Cookies & Einwilligung</h2>
+          <p class="cookie-text">
+            Wir nutzen notwendige Cookies für die Funktion der Seite. Optional verwenden wir Analyse- und Marketing-Cookies, um die Website zu verbessern.
+          </p>
+        </div>
+        <button class="cookie-x" type="button" aria-label="Schließen" data-cookie-close>✕</button>
+      </div>
+
+      <div class="cookie-actions">
+        <button class="btn btn-primary" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+        <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        <button class="btn" type="button" data-cookie-open-settings>Einstellungen</button>
+      </div>
+
+      <div class="cookie-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <span aria-hidden="true">·</span>
+        <a href="impressum.html">Impressum</a>
+      </div>
+
+      <!-- Settings Panel -->
+      <div class="cookie-settings" data-cookie-settings hidden>
+        <div class="cookie-settings-head">
+          <div class="cookie-settings-title">Einstellungen</div>
+          <div class="cookie-settings-sub">Du kannst deine Auswahl jederzeit ändern.</div>
+        </div>
+
+        <div class="cookie-toggles">
+          <label class="cookie-toggle is-locked">
+            <input type="checkbox" checked disabled>
+            <span>
+              <strong>Notwendig</strong>
+              <small>Erforderlich für Grundfunktionen (immer aktiv).</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="analytics">
+            <span>
+              <strong>Analyse</strong>
+              <small>Hilft uns zu verstehen, was funktioniert.</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="marketing">
+            <span>
+              <strong>Marketing</strong>
+              <small>Für Werbung/Retargeting (optional).</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="cookie-actions cookie-actions--settings">
+          <button class="btn btn-primary" type="button" data-cookie-save>Auswahl speichern</button>
+          <button class="btn" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+          <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        </div>
+
+        <p class="cookie-note">
+          Hinweis: Wenn du Analyse/Marketing deaktivierst, können bereits geladene Drittanbieter-Skripte nicht „zurückgeholt“ werden, ohne die Seite neu zu laden.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Header (einheitlich zu index/kontakt/waerme/etc.) -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Startseite">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">Sanitärbetrieb</div>
+          <div class="brand-sub">Sanitär · Heizung · Service</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <div class="dropdown" data-dropdown>
+          <button class="nav-btn" data-dropdown-btn aria-expanded="false" aria-controls="serviceMenu">
+            Service <span class="caret" aria-hidden="true"></span>
+          </button>
+
+          <div class="dropdown-menu" id="serviceMenu" data-dropdown-menu aria-hidden="true">
+            <a class="dd-item" href="was-tun-wenn.html">
+              <span class="dd-icon" aria-hidden="true">?</span>
+              <span>
+                <div class="dd-title">Was tun wenn</div>
+                <div class="dd-sub">Schnelle Hilfe & Checklisten</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="badplanung.html">
+              <span class="dd-icon" aria-hidden="true">▦</span>
+              <span>
+                <div class="dd-title">Badplanung</div>
+                <div class="dd-sub">Von Idee bis Umsetzung</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="referenzen.html">
+              <span class="dd-icon" aria-hidden="true">✓</span>
+              <span>
+                <div class="dd-title">Referenzen</div>
+                <div class="dd-sub">Projekte & Vorher/Nachher</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="waerme.html">
+              <span class="dd-icon" aria-hidden="true">♨</span>
+              <span>
+                <div class="dd-title">Wärme</div>
+                <div class="dd-sub">Heizung, Effizienz, Beratung</div>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="team.html">Team</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="karriere.html">Karriere</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="burger" data-burger aria-expanded="false" aria-label="Menü öffnen">
+          <span aria-hidden="true"></span>
+        </button>
+
+        <!-- ✅ NEU: Anruf Button (Desktop + Mobile sichtbar) -->
+        <a class="btn btn-call" href="tel:+494012345678">Anrufen</a>
+
+        <a class="btn btn-primary" href="kontakt.html">Anfrage</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav data-open="false">
+      <div class="container mobile-nav-inner">
+        <a class="mobile-link" href="index.html">Home</a>
+        <a class="mobile-link" href="team.html">Team</a>
+        <a class="mobile-link" href="kontakt.html">Kontakt</a>
+        <a class="mobile-link" href="karriere.html">Karriere</a>
+
+        <div class="mobile-sub" aria-label="Service Unterseiten">
+          <a href="was-tun-wenn.html">Service: Was tun wenn</a>
+          <a href="badplanung.html">Service: Badplanung</a>
+          <a href="referenzen.html">Service: Referenzen</a>
+          <a href="waerme.html">Service: Wärme</a>
+        </div>
+
+        <!-- ✅ Optional: CTA Buttons im Mobile-Menü -->
+        <div class="mobile-cta">
+          <a class="btn btn-call w-100" href="tel:+494012345678">Anrufen</a>
+          <a class="btn btn-primary w-100" href="kontakt.html">Anfrage</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main" id="content">
+    <div class="container">
+      <div class="page-head">
+        <div class="kicker">Rechtliches</div>
+        <h1 class="page-title">Datenschutzerklärung</h1>
+        <p class="page-sub">Template. Muss an Hosting, Formulare, Tracking und Tools angepasst werden.</p>
+      </div>
+
+      <section class="grid" style="grid-template-columns:1fr; gap:12px;">
+        <div class="card">
+          <h2 class="h3" style="margin:0 0 8px;">1. Verantwortlicher</h2>
+          <p class="muted" style="margin:0;">
+            Sanitär Musterbetrieb, Musterstraße 1, 22765 Hamburg<br>
+            E-Mail: kontakt@sanitaer-musterbetrieb.de
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h3" style="margin:0 0 8px;">2. Allgemeine Hinweise</h2>
+          <p class="muted" style="margin:0;">
+            Diese Seite ist ein Template. Je nach Hosting (Logfiles), Kontaktwegen, eingebetteten Inhalten,
+            Analyse/Marketing, Fonts oder Karten ändern sich Pflichttexte und Rechtsgrundlagen.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h3" style="margin:0 0 8px;">3. Kontaktaufnahme</h2>
+          <p class="muted" style="margin:0;">
+            Wenn Sie uns per Telefon oder E-Mail kontaktieren, verarbeiten wir die übermittelten Daten zur Bearbeitung
+            Ihrer Anfrage. Rechtsgrundlage, Speicherdauer und ggf. Empfänger müssen für den echten Betrieb konkret ergänzt werden.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h3" style="margin:0 0 8px;">4. Cookies / Tracking</h2>
+          <p class="muted" style="margin:0;">
+            Nur aufnehmen, wenn ihr tatsächlich Analyse- oder Marketing-Tools nutzt. Dann braucht ihr in der Regel:
+            Einwilligung (Consent), Anbieter-Auflistung, Zwecke, Speicherdauer und Widerrufsmöglichkeiten.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h3" style="margin:0 0 8px;">5. Ihre Rechte</h2>
+          <p class="muted" style="margin:0;">
+            Sie haben u. a. das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+            Widerspruch, Datenübertragbarkeit sowie Beschwerde bei einer Aufsichtsbehörde.
+          </p>
+        </div>
+
+        <div class="card card-soft">
+          <h2 class="h3" style="margin:0 0 8px;">Hinweis</h2>
+          <p class="muted" style="margin:0;">
+            Für eine rechtssichere Datenschutzerklärung müsst ihr prüfen: Hosting-Anbieter, Server-Logs, Kontakt-/Bewerbungsformulare (z.B. Tally),
+            eingebettete Inhalte, Schriftarten, CDN, Analytics/Marketing, Auftragsverarbeitung und ggf. Drittlandtransfer.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight:800; color:var(--text);">Sanitärbetrieb</div>
+        <div style="margin-top:6px;">© <span id="year"></span> Alle Rechte vorbehalten.</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

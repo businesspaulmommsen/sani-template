@@ -1,0 +1,343 @@
+<!-- ===========================
+was-tun-wenn.html (überarbeitet + Karriere im Header + Call Button)
+=========================== -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Was tun wenn … | Sanitärbetrieb</title>
+  <meta name="description" content="Soforthilfe & Checklisten bei Sanitär-Notfällen." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <!-- Cookie Banner -->
+  <div class="cookie" data-cookie-banner hidden>
+    <div class="cookie-backdrop" data-cookie-close></div>
+
+    <section class="cookie-card" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+      <div class="cookie-head">
+        <div>
+          <div class="cookie-kicker">Datenschutz</div>
+          <h2 id="cookieTitle" class="cookie-title">Cookies & Einwilligung</h2>
+          <p class="cookie-text">
+            Wir nutzen notwendige Cookies für die Funktion der Seite. Optional verwenden wir Analyse- und Marketing-Cookies, um die Website zu verbessern.
+          </p>
+        </div>
+        <button class="cookie-x" type="button" aria-label="Schließen" data-cookie-close>✕</button>
+      </div>
+
+      <div class="cookie-actions">
+        <button class="btn btn-primary" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+        <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        <button class="btn" type="button" data-cookie-open-settings>Einstellungen</button>
+      </div>
+
+      <div class="cookie-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <span aria-hidden="true">·</span>
+        <a href="impressum.html">Impressum</a>
+      </div>
+
+      <div class="cookie-settings" data-cookie-settings hidden>
+        <div class="cookie-settings-head">
+          <div class="cookie-settings-title">Einstellungen</div>
+          <div class="cookie-settings-sub">Du kannst deine Auswahl jederzeit ändern.</div>
+        </div>
+
+        <div class="cookie-toggles">
+          <label class="cookie-toggle is-locked">
+            <input type="checkbox" checked disabled>
+            <span>
+              <strong>Notwendig</strong>
+              <small>Erforderlich für Grundfunktionen (immer aktiv).</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="analytics">
+            <span>
+              <strong>Analyse</strong>
+              <small>Hilft uns zu verstehen, was funktioniert.</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="marketing">
+            <span>
+              <strong>Marketing</strong>
+              <small>Für Werbung/Retargeting (optional).</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="cookie-actions cookie-actions--settings">
+          <button class="btn btn-primary" type="button" data-cookie-save>Auswahl speichern</button>
+          <button class="btn" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+          <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        </div>
+
+        <p class="cookie-note">
+          Hinweis: Wenn du Analyse/Marketing deaktivierst, können bereits geladene Drittanbieter-Skripte nicht „zurückgeholt“ werden, ohne die Seite neu zu laden.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Startseite">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">Sanitärbetrieb</div>
+          <div class="brand-sub">Sanitär · Heizung · Service</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <div class="dropdown" data-dropdown>
+          <button class="nav-btn" data-dropdown-btn aria-expanded="false" aria-controls="serviceMenu">
+            Service <span class="caret" aria-hidden="true"></span>
+          </button>
+
+          <div class="dropdown-menu" id="serviceMenu" data-dropdown-menu aria-hidden="true">
+            <a class="dd-item" href="was-tun-wenn.html">
+              <span class="dd-icon" aria-hidden="true">?</span>
+              <span>
+                <div class="dd-title">Was tun wenn</div>
+                <div class="dd-sub">Schnelle Hilfe & Checklisten</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="badplanung.html">
+              <span class="dd-icon" aria-hidden="true">▦</span>
+              <span>
+                <div class="dd-title">Badplanung</div>
+                <div class="dd-sub">Von Idee bis Umsetzung</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="referenzen.html">
+              <span class="dd-icon" aria-hidden="true">✓</span>
+              <span>
+                <div class="dd-title">Referenzen</div>
+                <div class="dd-sub">Projekte & Vorher/Nachher</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="waerme.html">
+              <span class="dd-icon" aria-hidden="true">♨</span>
+              <span>
+                <div class="dd-title">Wärme</div>
+                <div class="dd-sub">Heizung, Effizienz, Beratung</div>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="team.html">Team</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="karriere.html">Karriere</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="burger" data-burger aria-expanded="false" aria-label="Menü öffnen">
+          <span aria-hidden="true"></span>
+        </button>
+
+        <!-- ✅ NEU: Anruf-Button -->
+        <a class="btn btn-call" href="tel:+4940123456789">Anrufen</a>
+
+        <a class="btn btn-primary" href="kontakt.html">Anfrage</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav data-open="false">
+      <div class="container mobile-nav-inner">
+        <a class="mobile-link" href="index.html">Home</a>
+        <a class="mobile-link" href="team.html">Team</a>
+        <a class="mobile-link" href="kontakt.html">Kontakt</a>
+        <a class="mobile-link" href="karriere.html">Karriere</a>
+
+        <div class="mobile-sub" aria-label="Service Unterseiten">
+          <a href="was-tun-wenn.html">Service: Was tun wenn</a>
+          <a href="badplanung.html">Service: Badplanung</a>
+          <a href="referenzen.html">Service: Referenzen</a>
+          <a href="waerme.html">Service: Wärme</a>
+        </div>
+
+        <!-- ✅ Optional: Mobile-CTA -->
+        <div class="mobile-cta">
+          <a class="btn btn-call w-100" href="tel:+4940123456789">Anrufen</a>
+          <a class="btn btn-primary w-100" href="kontakt.html">Anfrage</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="content">
+    <div class="container">
+      <div class="page-head">
+        <div class="kicker">Soforthilfe</div>
+        <h1 class="page-title">Was tun wenn …</h1>
+
+        <div class="card" style="margin-top:12px;">
+          <p style="margin:0 0 10px; font-weight:800; color:var(--text);">
+            Eins können wir Ihnen versprechen: Wenn Sie uns brauchen, sind wir für Sie da. Meistens schneller als die Anderen.
+          </p>
+          <p class="muted" style="margin:0;">
+            In Notfällen erreichen Sie uns schnell und zuverlässig unter
+            <a href="tel:+4940123456789" style="font-weight:800;">+49 40 123 456 789</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Notfall-Blöcke -->
+      <section style="margin-top:14px; display:grid; gap:12px;">
+        <!-- 1 -->
+        <article class="card" style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="dd-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="28" height="28">
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 14H42M42 14V46" />
+                <path d="M10 46H42" opacity="0.9"/>
+                <path d="M42 16l4 4M42 20l3 3M42 24l4 4" />
+                <path d="M46 30c0 2-2 4-2 6a2 2 0 0 0 4 0c0-2-2-4-2-6z" />
+                <path d="M52 34c0 1.6-1.6 3.2-1.6 4.8a1.6 1.6 0 0 0 3.2 0c0-1.6-1.6-3.2-1.6-4.8z" />
+                <path d="M47 41c0 1.6-1.6 3.2-1.6 4.8a1.6 1.6 0 0 0 3.2 0c0-1.6-1.6-3.2-1.6-4.8z" />
+              </g>
+            </svg>
+          </div>
+          <div style="min-width:0;">
+            <div style="font-weight:850; font-size:16px;">Es kommt Wasser aus Wand oder Decke!</div>
+            <p class="muted" style="margin:8px 0 0;">
+              Wissen Sie, wo sich Ihr Haupthahn befindet? Bitte zudrehen.
+              Im Anschluss kontaktieren Sie Ihre Hausverwaltung oder unsere Notfallnummer.
+            </p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="card" style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="dd-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="28" height="28">
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 22h28a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z" />
+                <path d="M18 26v18M24 26v18M30 26v18M36 26v18M42 26v18" />
+                <path d="M16 50v4M40 50v4" />
+                <path d="M50 28c2 2 2 6 0 8" />
+                <path d="M54 26c3 3 3 10 0 13" />
+                <path d="M50 42c2-2 2-6 0-8" opacity="0.9"/>
+                <path d="M26 18c2-3 6-3 6 1 0 3-2 4-2 6 0 2 2 3 2 5 0 3-3 5-6 5s-6-2-6-6c0-4 4-5 6-11z" />
+                <path d="M26 30c-1-2 1-3 2-5 1 2 3 3 3 5 0 2-2 3-3 3s-2-1-2-3z" opacity="0.9"/>
+              </g>
+            </svg>
+          </div>
+          <div style="min-width:0;">
+            <div style="font-weight:850; font-size:16px;">Ihre Heizung funktioniert nicht oder macht ungewöhnliche Geräusche!</div>
+            <p class="muted" style="margin:8px 0 0;">Kontaktieren Sie uns.</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="card" style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="dd-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="28" height="28">
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 14h44v36H10z" opacity="0.9"/>
+                <path d="M16 34h32" />
+                <path d="M16 30v8M48 30v8" opacity="0.9"/>
+                <path d="M6 34h14" />
+                <path d="M20 30l8 4-8 4z" />
+                <path d="M10 30v8" opacity="0.9"/>
+                <path d="M28 34l4-4M28 34l4 4M28 34h6" />
+                <path d="M34 38c0 1.8-1.8 3.6-1.8 5.4a1.8 1.8 0 0 0 3.6 0c0-1.8-1.8-3.6-1.8-5.4z" />
+                <path d="M40 40c0 1.4-1.4 2.8-1.4 4.2a1.4 1.4 0 0 0 2.8 0c0-1.4-1.4-2.8-1.4-4.2z" opacity="0.95"/>
+              </g>
+            </svg>
+          </div>
+          <div style="min-width:0;">
+            <div style="font-weight:850; font-size:16px;">Sie haben in die Wand gebohrt und dabei ein Rohr getroffen?</div>
+            <p class="muted" style="margin:8px 0 0;">
+              Wissen Sie, wo sich Ihr Haupthahn befindet? Bitte zudrehen.
+              Im Anschluss kontaktieren Sie Ihre Hausverwaltung oder unsere Notfallnummer.
+            </p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="card" style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="dd-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="28" height="28">
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="32" cy="40" r="10" />
+                <circle cx="32" cy="40" r="3" opacity="0.9"/>
+                <path d="M32 30v-4M24 40h-4M40 40h4M32 50v4" opacity="0.9"/>
+                <path d="M20 24c4-6 20-6 24 0 3 4-2 10-10 10-6 0-8-4-6-6 2-2 6-1 6 2" />
+                <path d="M18 28l3 3M46 28l-3 3" opacity="0.9"/>
+              </g>
+            </svg>
+          </div>
+          <div style="min-width:0;">
+            <div style="font-weight:850; font-size:16px;">Ihr Abfluss ist verstopft!</div>
+            <p class="muted" style="margin:8px 0 0;">
+              Haben Sie einen Pümpel im Haus? Dieser wird Ihnen fürs Erste helfen.
+              Wenn nichts mehr geht, kontaktieren Sie uns.
+            </p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="card" style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="dd-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="28" height="28">
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 30v-6a6 6 0 0 1 6-6h10a6 6 0 0 1 6 6v2" />
+                <path d="M40 26h10a4 4 0 0 1 4 4v4H40" />
+                <path d="M24 18v-4M34 18v-4" opacity="0.9"/>
+                <path d="M22 34h20v16H22z" />
+                <path d="M28 50v4M36 50v4" opacity="0.9"/>
+                <path d="M50 38c0 2.4-2.4 4.8-2.4 7.2a2.4 2.4 0 0 0 4.8 0c0-2.4-2.4-4.8-2.4-7.2z" />
+                <path d="M54 44c0 1.4-1.4 2.8-1.4 4.2a1.4 1.4 0 0 0 2.8 0c0-1.4-1.4-2.8-1.4-4.2z" opacity="0.95"/>
+              </g>
+            </svg>
+          </div>
+          <div style="min-width:0;">
+            <div style="font-weight:850; font-size:16px;">Ihr Wasserhahn tropft?</div>
+            <p class="muted" style="margin:8px 0 0;">
+              Rufen Sie uns bitte in unserem Büro zu den Geschäftszeiten an, wir vereinbaren gern einen Termin.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <div class="card card-soft" style="margin-top:14px;">
+        <div style="font-weight:900;">Hinweis</div>
+        <p class="muted" style="margin:6px 0 0;">
+          In echten Notfällen: Wasser abstellen, Gefahr minimieren, dann anrufen. Wenn es ein Mietobjekt ist, parallel Hausverwaltung informieren.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight:800; color:var(--text);">Sanitärbetrieb</div>
+        <div style="margin-top:6px;">© <span id="year"></span> Alle Rechte vorbehalten.</div>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

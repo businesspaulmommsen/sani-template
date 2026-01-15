@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanitär & Heizung – Template</title>
+  <meta name="description" content="Modernes Sanitär-Template (White Version) – Struktur." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+
+  <!-- Cookie Banner -->
+  <div class="cookie" data-cookie-banner hidden>
+    <div class="cookie-backdrop" data-cookie-close></div>
+
+    <section class="cookie-card" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+      <div class="cookie-head">
+        <div>
+          <div class="cookie-kicker">Datenschutz</div>
+          <h2 id="cookieTitle" class="cookie-title">Cookies & Einwilligung</h2>
+          <p class="cookie-text">
+            Wir nutzen notwendige Cookies für die Funktion der Seite. Optional verwenden wir Analyse- und Marketing-Cookies, um die Website zu verbessern.
+          </p>
+        </div>
+        <button class="cookie-x" type="button" aria-label="Schließen" data-cookie-close>✕</button>
+      </div>
+
+      <div class="cookie-actions">
+        <button class="btn btn-primary" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+        <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        <button class="btn" type="button" data-cookie-open-settings>Einstellungen</button>
+      </div>
+
+      <div class="cookie-links">
+        <a href="datenschutz.html">Datenschutz</a>
+        <span aria-hidden="true">·</span>
+        <a href="impressum.html">Impressum</a>
+      </div>
+
+      <div class="cookie-settings" data-cookie-settings hidden>
+        <div class="cookie-settings-head">
+          <div class="cookie-settings-title">Einstellungen</div>
+          <div class="cookie-settings-sub">Du kannst deine Auswahl jederzeit ändern.</div>
+        </div>
+
+        <div class="cookie-toggles">
+          <label class="cookie-toggle is-locked">
+            <input type="checkbox" checked disabled>
+            <span>
+              <strong>Notwendig</strong>
+              <small>Erforderlich für Grundfunktionen (immer aktiv).</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="analytics">
+            <span>
+              <strong>Analyse</strong>
+              <small>Hilft uns zu verstehen, was funktioniert.</small>
+            </span>
+          </label>
+
+          <label class="cookie-toggle">
+            <input type="checkbox" data-cookie-toggle="marketing">
+            <span>
+              <strong>Marketing</strong>
+              <small>Für Werbung/Retargeting (optional).</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="cookie-actions cookie-actions--settings">
+          <button class="btn btn-primary" type="button" data-cookie-save>Auswahl speichern</button>
+          <button class="btn" type="button" data-cookie-accept-all>Alle akzeptieren</button>
+          <button class="btn" type="button" data-cookie-reject>Nur notwendig</button>
+        </div>
+
+        <p class="cookie-note">
+          Hinweis: Wenn du Analyse/Marketing deaktivierst, können bereits geladene Drittanbieter-Skripte nicht „zurückgeholt“ werden, ohne die Seite neu zu laden.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Karriere Popup (schwebend, kein Layout-Shift) -->
+  <div class="promo" data-promo hidden>
+    <div class="promo-backdrop" data-promo-close></div>
+
+    <section class="promo-card" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+      <button class="promo-x" type="button" aria-label="Schließen" data-promo-close>✕</button>
+
+      <div class="promo-kicker">Karriere</div>
+      <h2 id="promoTitle" class="promo-title">Ausbildung gesucht?</h2>
+      <p class="promo-text">
+        Du kennst jemanden, der eine Ausbildung im Bereich Sanitär, Heizung oder Bad machen möchte – oder interessiert dich das selber?
+        Dann schau auf unserer Karriere-Seite vorbei und sieh dir unsere Benefits an.
+      </p>
+
+      <div class="promo-actions">
+        <a class="btn btn-primary" href="karriere.html">Zur Karriere-Seite</a>
+        <button class="btn" type="button" data-promo-close>Schließen</button>
+      </div>
+    </section>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Startseite">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">Sanitär Musterbetrieb</div>
+          <div class="brand-sub">Hamburg & Umgebung</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <div class="dropdown" data-dropdown>
+          <button class="nav-btn" data-dropdown-btn aria-expanded="false" aria-controls="serviceMenu">
+            Service <span class="caret" aria-hidden="true"></span>
+          </button>
+
+          <div class="dropdown-menu" id="serviceMenu" data-dropdown-menu aria-hidden="true">
+            <a class="dd-item" href="was-tun-wenn.html">
+              <span class="dd-icon" aria-hidden="true">?</span>
+              <span>
+                <div class="dd-title">Was tun wenn</div>
+                <div class="dd-sub">Schnelle Hilfe & Checklisten</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="badplanung.html">
+              <span class="dd-icon" aria-hidden="true">▦</span>
+              <span>
+                <div class="dd-title">Badplanung</div>
+                <div class="dd-sub">Von Idee bis Umsetzung</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="referenzen.html">
+              <span class="dd-icon" aria-hidden="true">✓</span>
+              <span>
+                <div class="dd-title">Referenzen</div>
+                <div class="dd-sub">Projekte & Vorher/Nachher</div>
+              </span>
+            </a>
+
+            <a class="dd-item" href="waerme.html">
+              <span class="dd-icon" aria-hidden="true">♨</span>
+              <span>
+                <div class="dd-title">Wärme</div>
+                <div class="dd-sub">Heizung, Effizienz, Beratung</div>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="team.html">Team</a>
+        <a class="nav-link" href="karriere.html">Karriere</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="burger" data-burger aria-expanded="false" aria-label="Menü öffnen">
+          <span aria-hidden="true"></span>
+        </button>
+
+        <!-- ✅ NEU: Anruf Button (Desktop + Mobile sichtbar) -->
+        <a class="btn btn-call" href="tel:+494012345678">Anrufen</a>
+
+        <a class="btn btn-primary" href="kontakt.html">Anfrage</a>
+      </div>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav data-open="false">
+      <div class="container mobile-nav-inner">
+        <a class="mobile-link" href="index.html">Home</a>
+        <a class="mobile-link" href="team.html">Team</a>
+        <a class="mobile-link" href="karriere.html">Karriere</a>
+        <a class="mobile-link" href="kontakt.html">Kontakt</a>
+
+        <div class="mobile-sub" aria-label="Service Unterseiten">
+          <a href="was-tun-wenn.html">Service: Was tun wenn</a>
+          <a href="badplanung.html">Service: Badplanung</a>
+          <a href="referenzen.html">Service: Referenzen</a>
+          <a href="waerme.html">Service: Wärme</a>
+        </div>
+
+        <!-- ✅ Optional: Buttons im Mobile-Menü -->
+        <div class="mobile-cta">
+          <a class="btn btn-call w-100" href="tel:+494012345678">Anrufen</a>
+          <a class="btn btn-primary w-100" href="kontakt.html">Anfrage</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="content">
+    <div class="container">
+
+      <section class="carousel" aria-label="Bildergalerie">
+        <div class="carousel-shell" data-carousel>
+          <button class="carousel-btn is-prev" type="button" data-carousel-prev aria-label="Vorheriges Bild">‹</button>
+
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <figure class="carousel-slide">
+                <img src="assets/slide-1.jpg" alt="Sanitär: Einsatz & Service" loading="eager">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="assets/slide-2.jpg" alt="Bad: Modernisierung & Planung" loading="lazy">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="assets/slide-3.jpg" alt="Wärme: Heizung & Effizienz" loading="lazy">
+              </figure>
+            </div>
+          </div>
+
+          <button class="carousel-btn is-next" type="button" data-carousel-next aria-label="Nächstes Bild">›</button>
+
+          <div class="carousel-dots" data-carousel-dots aria-label="Bildauswahl">
+            <button type="button" class="dot" data-carousel-dot="0" aria-label="Bild 1"></button>
+            <button type="button" class="dot" data-carousel-dot="1" aria-label="Bild 2"></button>
+            <button type="button" class="dot" data-carousel-dot="2" aria-label="Bild 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="kicker">Sanitär • Heizung • Bad</div>
+            <h1>Saubere Lösungen. Modern umgesetzt.</h1>
+            <p>Planung, Installation und Service – schnell, sauber und zuverlässig.</p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="kontakt.html">Termin anfragen</a>
+              <a class="btn" href="badplanung.html">Badplanung</a>
+              <a class="btn" href="was-tun-wenn.html">Schnellhilfe</a>
+            </div>
+
+            <div class="badges" style="margin-top:14px;">
+              <span class="badge">Transparente Preise</span>
+              <span class="badge">Schnelle Termine</span>
+              <span class="badge">Saubere Ausführung</span>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <strong>Kontakt</strong>
+            <p style="color:var(--muted); margin:0;">In Notfällen und bei Fragen sind wir erreichbar.</p>
+            <div class="grid" style="grid-template-columns:1fr; margin:0;">
+              <div class="card">
+                <h3 style="margin:0 0 6px;">Telefon</h3>
+                <p>+49 …</p>
+              </div>
+              <div class="card">
+                <h3 style="margin:0 0 6px;">E-Mail</h3>
+                <p>mail@…</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px;">
+        <div>
+          <h2 class="page-title" style="font-size:26px; margin:0 0 8px;">Unsere Leistungen</h2>
+          <p class="page-sub">Schnellhilfe, Planung, Modernisierung und Service aus einer Hand.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Was tun wenn</h3>
+            <p class="muted">Soforthilfe bei Notfällen: Rohrbruch, Heizungsausfall, Verstopfung.</p>
+            <a class="link" href="was-tun-wenn.html">Zur Schnellhilfe →</a>
+          </div>
+
+          <div class="card">
+            <h3>Badplanung</h3>
+            <p class="muted">Von Idee bis Umsetzung – stilsicher geplant, sauber koordiniert.</p>
+            <a class="link" href="badplanung.html">Zur Badplanung →</a>
+          </div>
+
+          <div class="card">
+            <h3>Wärme</h3>
+            <p class="muted">Heizung, Wartung, Modernisierung, Solar – effizient und leise.</p>
+            <a class="link" href="waerme.html">Zu Wärme →</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight:800; color:var(--text);">Sanitär Musterbetrieb</div>
+        <div style="margin-top:6px;">© <span id="year"></span> Alle Rechte vorbehalten.</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+  <!-- Promo Popup Logic (unabhängig von script.js) -->
+  <script>
+    (function(){
+      "use strict";
+
+      var CONSENT_KEY = "pm_cookie_consent_v1";
+      var PROMO_KEY = "pm_promo_closed_v1";
+
+      var promo = document.querySelector("[data-promo]");
+      if(!promo) return;
+
+      var closeEls = Array.prototype.slice.call(promo.querySelectorAll("[data-promo-close]"));
+      function hide(){
+        promo.hidden = true;
+        try{ localStorage.setItem(PROMO_KEY, "1"); }catch(_e){}
+      }
+      function alreadyClosed(){
+        try{ return localStorage.getItem(PROMO_KEY) === "1"; }catch(_e){ return false; }
+      }
+      function hasConsent(){
+        try{ return !!localStorage.getItem(CONSENT_KEY); }catch(_e){ return false; }
+      }
+      function cookieBannerVisible(){
+        var b = document.querySelector("[data-cookie-banner]");
+        return b && b.hidden === false;
+      }
+
+      closeEls.forEach(function(el){
+        el.addEventListener("click", hide);
+      });
+
+      function maybeShow(){
+        if(alreadyClosed()) return;
+        if(!hasConsent()) return;            // erst nach Cookie-Entscheidung
+        if(cookieBannerVisible()) return;    // Cookie ist noch offen
+        promo.hidden = false;
+      }
+
+      // Check mehrfach (falls Cookie gerade geschlossen wurde)
+      setTimeout(maybeShow, 700);
+      setTimeout(maybeShow, 1400);
+      setTimeout(maybeShow, 2400);
+    })();
+  </script>
+</body>
+</html>
